@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Satish Yadav</Authors>
+    <Company />
+    <Product />
+    <Description>NameValueType takes Property Name, Value, Type infomaiton and creates Stongly Typed .NET objects.</Description>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyName>NameValueType</AssemblyName>
+    <RootNamespace>NameValueType</RootNamespace>
+  </PropertyGroup>
+
+</Project>
