@@ -10,4 +10,3 @@ matrix:
         - cd NameValueType
         - dotnet restore
         - dotnet build -c Release
-    - mono: latest
