@@ -7,7 +7,7 @@ matrix:
       mono: none
       dist: trusty     
       script:
-        - cd NameValueType
+#        - cd NameValueType
         - dotnet restore
         - dotnet build -c Release
         - dotnet test
