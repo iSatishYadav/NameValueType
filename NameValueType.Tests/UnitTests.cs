@@ -43,9 +43,9 @@ namespace NameValueType.Tests
                 Id = Guid.NewGuid(),
                 Name = "App2",
                 Count = 1,
-                Keywords = new string[] { "Hello", "World" },
-                Credentials = new Guid[] { Guid.NewGuid(), Guid.NewGuid() },
-                IpAddresses = new string[] { "9.8.7.6", "1.2.3.4" },
+                StringArray = new string[] { "Hello", "World" },
+                Guids = new Guid[] { Guid.NewGuid(), Guid.NewGuid() },
+                AnotherStringArray = new string[] { "9.8.7.6", "1.2.3.4" },
                 AnotherIds = new int[] { 1, 2, 3, 4 }
             };
             var claims = new List<NameValueType>
@@ -56,14 +56,14 @@ namespace NameValueType.Tests
 
                 new NameValueType(nameof(TestItem.Count), app.Count.ToString(), typeof(int).FullName),
 
-                new NameValueType(nameof(TestItem.Keywords), app.Keywords[0], typeof(string).FullName),
-                new NameValueType(nameof(TestItem.Keywords), app.Keywords[1], typeof(string).FullName),
+                new NameValueType(nameof(TestItem.StringArray), app.StringArray[0], typeof(string).FullName),
+                new NameValueType(nameof(TestItem.StringArray), app.StringArray[1], typeof(string).FullName),
 
-                new NameValueType(nameof(TestItem.Credentials), app.Credentials[0].ToString(), typeof(Guid).FullName),
-                new NameValueType(nameof(TestItem.Credentials), app.Credentials[1].ToString(), typeof(Guid).FullName),
+                new NameValueType(nameof(TestItem.Guids), app.Guids[0].ToString(), typeof(Guid).FullName),
+                new NameValueType(nameof(TestItem.Guids), app.Guids[1].ToString(), typeof(Guid).FullName),
 
-                new NameValueType(nameof(TestItem.IpAddresses), app.IpAddresses[0], typeof(string).FullName),
-                new NameValueType(nameof(TestItem.IpAddresses), app.IpAddresses[1], typeof(string).FullName),
+                new NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[0], typeof(string).FullName),
+                new NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[1], typeof(string).FullName),
 
                 new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[0].ToString(), typeof(int).FullName),
                 new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[1].ToString(), typeof(int).FullName),
