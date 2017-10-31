@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NameValueType.Core\NameValueType.Core.csproj" />
     <ProjectReference Include="..\NameValueType\NameValueType.csproj" />
   </ItemGroup>
 

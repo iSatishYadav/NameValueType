@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using NameValueType.Core;
 using System.Collections.Generic;
 
 namespace NameValueType.Tests.Core
@@ -16,11 +17,11 @@ namespace NameValueType.Tests.Core
                 Name = "Hello",
                 Count = 1
             };
-            var claims = new List<NameValueType>
+            var claims = new List<NameValueType.Core.NameValueType>
             {
-                new NameValueType(nameof(TestItem.Id), app.Id.ToString(), typeof(Guid).FullName),
-                new NameValueType(nameof(TestItem.Name), app.Name, typeof(string).FullName),
-                new NameValueType(nameof(TestItem.Count), app.Count.ToString(), typeof(int).FullName)
+                new NameValueType.Core.NameValueType(nameof(TestItem.Id), app.Id.ToString(), typeof(Guid).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Name), app.Name, typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Count), app.Count.ToString(), typeof(int).FullName)
             };
             //Act
             var appNow = claims.ToTypedObject<TestItem>();
@@ -48,27 +49,27 @@ namespace NameValueType.Tests.Core
                 AnotherStringArray = new string[] { "9.8.7.6", "1.2.3.4" },
                 AnotherIds = new int[] { 1, 2, 3, 4 }
             };
-            var claims = new List<NameValueType>
+            var claims = new List<NameValueType.Core.NameValueType>
             {
-                new NameValueType(nameof(TestItem.Id), app.Id.ToString(), typeof(Guid).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Id), app.Id.ToString(), typeof(Guid).FullName),
 
-                new NameValueType(nameof(TestItem.Name), app.Name, typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Name), app.Name, typeof(string).FullName),
 
-                new NameValueType(nameof(TestItem.Count), app.Count.ToString(), typeof(int).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Count), app.Count.ToString(), typeof(int).FullName),
 
-                new NameValueType(nameof(TestItem.StringArray), app.StringArray[0], typeof(string).FullName),
-                new NameValueType(nameof(TestItem.StringArray), app.StringArray[1], typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.StringArray), app.StringArray[0], typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.StringArray), app.StringArray[1], typeof(string).FullName),
 
-                new NameValueType(nameof(TestItem.Guids), app.Guids[0].ToString(), typeof(Guid).FullName),
-                new NameValueType(nameof(TestItem.Guids), app.Guids[1].ToString(), typeof(Guid).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Guids), app.Guids[0].ToString(), typeof(Guid).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.Guids), app.Guids[1].ToString(), typeof(Guid).FullName),
 
-                new NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[0], typeof(string).FullName),
-                new NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[1], typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[0], typeof(string).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherStringArray), app.AnotherStringArray[1], typeof(string).FullName),
 
-                new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[0].ToString(), typeof(int).FullName),
-                new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[1].ToString(), typeof(int).FullName),
-                new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[2].ToString(), typeof(int).FullName),
-                new NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[3].ToString(), typeof(int).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[0].ToString(), typeof(int).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[1].ToString(), typeof(int).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[2].ToString(), typeof(int).FullName),
+                new NameValueType.Core.NameValueType(nameof(TestItem.AnotherIds), app.AnotherIds[3].ToString(), typeof(int).FullName),
 
             };
 
