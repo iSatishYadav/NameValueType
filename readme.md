@@ -1,7 +1,9 @@
 # Create strongly typed .NET objects from ````IEnumerable<NameValueType>```` using Reflection.
 
-[![Build Status](https://travis-ci.org/iSatishYadav/NameValueType.svg?branch=master)](https://travis-ci.org/iSatishYadav/NameValueType)
-![VS Build Status](https://skycodebase.visualstudio.com/_apis/public/build/definitions/008215d1-bfd2-4de5-a8ac-48526eb71dae/1/badge)
+ASP.NET Core (NameValueType) | ASP.NET (NameValueType.Core)
+-|-
+![VS Build Status](https://skycodebase.visualstudio.com/_apis/public/build/definitions/008215d1-bfd2-4de5-a8ac-48526eb71dae/1/badge) | ![VS Build Status](https://skycodebase.visualstudio.com/_apis/public/build/definitions/008215d1-bfd2-4de5-a8ac-48526eb71dae/3/badge)
+[![NuGet](https://img.shields.io/nuget/dt/NameValueType.svg)](https://www.nuget.org/packages/NameValueType) | [![NuGet](https://img.shields.io/nuget/dt/NameValueType.Core.svg)](https://www.nuget.org/packages/NameValueType.Core) 
 
 To create a strongly typed .NET objecta you need 3 information about an object.
 1. What are the property names of that object?
