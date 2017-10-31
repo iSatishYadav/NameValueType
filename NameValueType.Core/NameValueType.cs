@@ -1,4 +1,4 @@
-﻿namespace NameValueType
+﻿namespace NameValueType.Core
 {
     public class NameValueType
     {

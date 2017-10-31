@@ -12,4 +12,8 @@
     <RootNamespace>NameValueType</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NameValueType.Core\NameValueType.Core.csproj" />
+  </ItemGroup>
+
 </Project>
